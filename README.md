@@ -23,3 +23,19 @@ Run java program and pass arguments
         }
     }
 ```
+
+# Inheritance
+## Single Inheritance
+>One class inherits from another.
+## Multilevel Inheritance
+>A class inherits from a child class, forming a chain.
+## Hierarchical Inheritance
+>Multiple classes inherit from a single parent class.
+## Using super in Inheritance
+>super keyword is used to call the parent class methods or constructors.
+## Method Overriding in Inheritance
+>Child class overrides a method from the parent class.
+## final Keyword with Inheritance
+>final prevents further inheritance or method overriding.
+## Interface Inheritance (Multiple Inheritance in Java)
+>multiple inheritance is achieved through interfaces.
