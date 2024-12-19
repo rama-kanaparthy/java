@@ -39,3 +39,6 @@ Run java program and pass arguments
 >final prevents further inheritance or method overriding.
 ## Interface Inheritance (Multiple Inheritance in Java)
 >multiple inheritance is achieved through interfaces.
+
+# Nested Classes
+>>A static nested class in Java is a nested class that is declared with the static modifier. Unlike inner classes, static nested classes do not require an instance of the enclosing class to be instantiated. They behave like top-level classes but are logically grouped inside the enclosing class.
