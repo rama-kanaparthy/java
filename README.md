@@ -65,3 +65,4 @@ Run java program and pass arguments
 | **Access Modifiers**         | Methods can have any access modifier.          | Methods are `public` by default.          |
 | **When to Use**              | When you need partial abstraction or shared behavior. | When you need to define a strict contract. |
 
+>>>An anonymous class in Java is a class without a name that is defined and instantiated in a single statement. It is often used to create an instance of a class or an interface with customized behavior without explicitly creating a separate subclass.
