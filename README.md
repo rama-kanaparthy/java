@@ -83,3 +83,114 @@ A **lambda expression** in Java is a concise way to express an instance of a **f
 (parameters) -> expression
 ```
 
+# Exception Handling in Java
+
+In Java, **exception handling** is a powerful mechanism to handle runtime errors, allowing the normal flow of execution to be preserved. By using exception handling, Java programs can respond to errors, display meaningful error messages, or perform specific actions to recover from the error.
+
+## Types of Exceptions
+
+There are two main categories of exceptions in Java:
+
+### 1. **Checked Exceptions**
+
+- **Definition**: Checked exceptions are exceptions that are checked at compile-time. The compiler ensures that the programmer handles or declares these exceptions.
+- **Example**: `IOException`, `SQLException`, `FileNotFoundException`.
+
+- **How to Handle**: You must handle checked exceptions using `try-catch` blocks, or declare them using the `throws` keyword in the method signature.
+
+    ```java
+    public void readFile(String fileName) throws IOException {
+        FileReader file = new FileReader(fileName);  // Might throw IOException
+        BufferedReader reader = new BufferedReader(file);
+        reader.readLine();
+        reader.close();
+    }
+    ```
+
+### 2. **Unchecked Exceptions (Runtime Exceptions)**
+
+- **Definition**: Unchecked exceptions are exceptions that are not checked at compile-time. These exceptions are subclasses of `RuntimeException`. They typically indicate programming bugs, such as invalid array accesses or null pointer references.
+- **Example**: `NullPointerException`, `ArithmeticException`, `ArrayIndexOutOfBoundsException`.
+
+- **How to Handle**: Unchecked exceptions do not require explicit handling or declaration. They can be caught optionally using `try-catch`.
+
+    ```java
+    public void divideNumbers(int a, int b) {
+        int result = a / b;  // Might throw ArithmeticException if b is zero
+    }
+    ```
+
+---
+
+## Exception Hierarchy
+
+The `Throwable` class is the superclass of all errors and exceptions in Java. It has two main subclasses:
+
+- **Error**: Represents severe errors that are generally not recoverable (e.g., `OutOfMemoryError`, `StackOverflowError`).
+- **Exception**: The superclass of all exceptions that can be handled by the program. It has two main categories:
+    - **Checked Exceptions**: Subclasses of `Exception`, such as `IOException` or `SQLException`.
+    - **Unchecked Exceptions (RuntimeException)**: Subclasses of `RuntimeException`, such as `NullPointerException`, `ArithmeticException`.
+
+---
+
+## Exception Handling Keywords
+
+### 1. **try** and **catch**
+
+- **try**: Contains the code that may throw an exception.
+- **catch**: Catches the exception thrown by the `try` block and handles it.
+
+    ```
+    try {
+        // Code that might throw an exception
+    } catch (ExceptionType e) {
+        // Exception handling code
+    }
+    ```
+
+### 2. **finally**
+
+- The `finally` block contains code that will always be executed, regardless of whether an exception was thrown or not. It's typically used for clean-up operations (e.g., closing file streams or database connections).
+
+    ```
+    try {
+        // Code that might throw an exception
+    } catch (ExceptionType e) {
+        // Exception handling code
+    } finally {
+        // Always executes
+    }
+    ```
+
+### 3. **throw** and **throws**
+
+- **throw**: Used to explicitly throw an exception.
+
+    ```
+    throw new Exception("An error occurred!");
+    ```
+
+- **throws**: Used in a method signature to declare that a method can throw certain exceptions. The calling code must handle these exceptions.
+
+    ```
+    public void someMethod() throws IOException {
+        // Code that can throw an IOException
+    }
+    ```
+
+---
+
+## Creating Custom Exceptions
+
+You can create your own exception by extending the `Exception` class (for checked exceptions) or `RuntimeException` (for unchecked exceptions).
+
+### Example of a Custom Checked Exception:
+
+```
+class InvalidAgeException extends Exception {
+    public InvalidAgeException(String message) {
+        super(message);
+    }
+}
+```
+
