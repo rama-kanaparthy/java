@@ -1,3 +1,5 @@
+package programbasics;
+
 public class Conditions {
 
     public static void main(String[] args) {
