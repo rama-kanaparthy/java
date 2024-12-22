@@ -69,3 +69,6 @@ Run java program and pass arguments
 
 ## Factory Method
 >The Factory Method design pattern provides an interface for creating objects but allows subclasses to alter the type of objects that will be created. It is often used when the exact type of the object to be created isn't known until runtime.
+
+## Functional Interface 
+>A functional interface in Java is an interface with exactly one abstract method. Functional interfaces are the basis of lambda expressions and method references introduced in Java 8.
