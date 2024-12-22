@@ -53,3 +53,15 @@ Run java program and pass arguments
 >**Protected:** Accessible within the same package and by subclasses(even in other packages). \
 >**Default (no keyword):** Accessible only within the same package.\
 >**Private:** Accessible only within the same class.
+
+## Comparison: Abstract Class vs Interface in Java
+| **Feature**                  | **Abstract Class**                              | **Interface**                              |
+|------------------------------|------------------------------------------------|-------------------------------------------|
+| **Keyword**                  | `abstract`                                     | `interface`                               |
+| **Methods**                  | Can have both abstract and concrete methods.   | Only abstract methods (before Java 8); can have default and static methods (from Java 8). |
+| **Fields**                   | Can have instance variables.                   | Can only have `public static final` constants. |
+| **Constructors**             | Can have constructors.                         | Cannot have constructors.                 |
+| **Inheritance**              | Supports single inheritance.                   | Supports multiple inheritance.            |
+| **Access Modifiers**         | Methods can have any access modifier.          | Methods are `public` by default.          |
+| **When to Use**              | When you need partial abstraction or shared behavior. | When you need to define a strict contract. |
+
