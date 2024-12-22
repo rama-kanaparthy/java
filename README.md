@@ -46,3 +46,10 @@ Run java program and pass arguments
 >>An inner class in Java is a non-static nested class that is associated with an instance of its enclosing class. It can access both the static and non-static members of the enclosing class.
 
 >>A local class in Java is a class that is defined within a block of code, such as a method, a constructor, or a static initializer block. These classes are local to the block in which they are defined and cannot be accessed from outside the block.
+
+## Access modifiers determine the visibility of classes, methods, variables, and constructors. There are four main access modifiers:
+
+>**Public:** Accessible from anywhere in the program. \
+>**Protected:** Accessible within the same package and by subclasses(even in other packages). \
+>**Default (no keyword):** Accessible only within the same package.\
+>**Private:** Accessible only within the same class.
