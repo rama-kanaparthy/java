@@ -72,3 +72,14 @@ Run java program and pass arguments
 
 ## Functional Interface 
 >A functional interface in Java is an interface with exactly one abstract method. Functional interfaces are the basis of lambda expressions and method references introduced in Java 8.
+
+# Lambda Expressions in Java
+
+A **lambda expression** in Java is a concise way to express an instance of a **functional interface**. It allows you to pass behavior as parameters or implement methods in a more readable way. Lambda expressions were introduced in **Java 8** and are widely used in **functional programming**.
+
+## Basic Syntax of Lambda Expression
+
+```
+(parameters) -> expression
+```
+
