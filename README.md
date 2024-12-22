@@ -66,3 +66,6 @@ Run java program and pass arguments
 | **When to Use**              | When you need partial abstraction or shared behavior. | When you need to define a strict contract. |
 
 >>>An anonymous class in Java is a class without a name that is defined and instantiated in a single statement. It is often used to create an instance of a class or an interface with customized behavior without explicitly creating a separate subclass.
+
+## Factory Method
+>The Factory Method design pattern provides an interface for creating objects but allows subclasses to alter the type of objects that will be created. It is often used when the exact type of the object to be created isn't known until runtime.
